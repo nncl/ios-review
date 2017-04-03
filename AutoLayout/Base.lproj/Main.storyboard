@@ -25,16 +25,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="87J-zc-wyD">
                                 <rect key="frame" x="0.0" y="20" width="320" height="113.5"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PhY-Oj-GH7">
-                                <rect key="frame" x="20" y="201" width="174" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PhY-Oj-GH7">
+                                <rect key="frame" x="16" y="149.5" width="186" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCx-Wa-L6y">
-                                <rect key="frame" x="223" y="201" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCx-Wa-L6y">
+                                <rect key="frame" x="218" y="149.5" width="86" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="Nom-3v-74C"/>
+                                </constraints>
                                 <state key="normal" title="Register"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEZ-so-mG1">
@@ -55,9 +56,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kCx-Wa-L6y" firstAttribute="leading" secondItem="PhY-Oj-GH7" secondAttribute="trailing" constant="16" id="4tb-nr-o69"/>
                             <constraint firstAttribute="trailing" secondItem="87J-zc-wyD" secondAttribute="trailing" id="700-1B-StC"/>
+                            <constraint firstItem="PhY-Oj-GH7" firstAttribute="top" secondItem="87J-zc-wyD" secondAttribute="bottom" constant="16" id="Dkm-fF-AgG"/>
                             <constraint firstItem="87J-zc-wyD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="JhH-jA-62l"/>
                             <constraint firstItem="87J-zc-wyD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MR8-Ap-aQR"/>
+                            <constraint firstAttribute="trailing" secondItem="kCx-Wa-L6y" secondAttribute="trailing" constant="16" id="Oca-yl-Ot1"/>
+                            <constraint firstItem="PhY-Oj-GH7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="dUb-9d-Tc7"/>
+                            <constraint firstItem="kCx-Wa-L6y" firstAttribute="top" secondItem="87J-zc-wyD" secondAttribute="bottom" constant="16" id="j9N-ND-fAM"/>
                             <constraint firstItem="87J-zc-wyD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="rav-we-cgZ"/>
                             <constraint firstItem="87J-zc-wyD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xDY-nm-ZSP"/>
                         </constraints>
